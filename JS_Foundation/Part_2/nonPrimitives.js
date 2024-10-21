@@ -41,4 +41,3 @@ let isValue= "234abc"; //true = 1 , false = 0
 // console.log(typeof  Number(undefined) );
 
 console.log(typeof  Number(String) );
-
