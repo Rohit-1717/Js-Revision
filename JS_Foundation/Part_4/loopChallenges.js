@@ -2,13 +2,13 @@
 write a `while` loop that calculates the sum of all the numbers from 1 to 5 and stores the result in a variable names `sum`.
 */
 
-let sum = 0;
-let i = 1;
+// let sum = 0;
+// let i = 1;
 
-while (i <= 5) {
-  sum = sum + i;
-  i++;
-}
+// while (i <= 5) {
+//   sum = sum + i;
+//   i++;
+// }
 
 // console.log(sum);
 
@@ -16,12 +16,12 @@ while (i <= 5) {
 2. Write a while loop that counts down from 5 to 1 and stores the result in a variable named `countDown`.
 */
 
-let countdown = [];
-let j = 5;
-while (j > 0) {
-  countdown.push(j);
-  j--;
-}
+// let countdown = [];
+// let j = 5;
+// while (j > 0) {
+//   countdown.push(j);
+//   j--;
+// }
 
 // console.log(countdown);
 
@@ -30,29 +30,29 @@ while (j > 0) {
 Store each tea type in an array named `teaCollection`.
 */
 
-let teaCollection = [];
-let tea;
+// let teaCollection = [];
+// let tea;
 
-do {
-  // tea = prompt(`Enter your favourite tea (type "stop" to finish)`);
+// do {
+//   // tea = prompt(`Enter your favourite tea (type "stop" to finish)`);
 
-  if (tea !== "stop") {
-    // teaCollection.push(tea);
-  }
-} while (tea !== "stop");
+//   if (tea !== "stop") {
+//     // teaCollection.push(tea);
+//   }
+// } while (tea !== "stop");
 
 /*
 4. Write a `do while` loop that adds numbers from 1 to 3 and stores the result in a variable named `total`.
 */
 
-let total = 0;
+// let total = 0;
 
-let k = 1;
+// let k = 1;
 
-do {
-  total += k;
-  k++;
-} while (k <= 3);
+// do {
+//   total += k;
+//   k++;
+// } while (k <= 3);
 
 // console.log(total);
 
@@ -60,16 +60,16 @@ do {
 5. Write a `for` loop that multiplies each element in the array `[2,4,6]` by 2 and stores the result in a new array named `multipliedNumbers`.
 */
 
-let multipliedNumbers = [];
+// let multipliedNumbers = [];
 
-let numbers = [2, 4, 6];
+// let numbers = [2, 4, 6];
 
-for (let l = 0; l <= numbers.length; l++) {
-  takenNumber = numbers[l] * 2;
-  multipliedNumbers.push(takenNumber);
-}
+// for (let l = 0; l <= numbers.length; l++) {
+//   takenNumber = numbers[l] * 2;
+//   multipliedNumbers.push(takenNumber);
+// }
 
-console.log(multipliedNumbers);
+// console.log(multipliedNumbers);
 
 // console.log("Hello");
 
@@ -77,5 +77,12 @@ console.log(multipliedNumbers);
 6. Write a `for loop that lists all the cities in the array `["London","Tokyo","Bejing","New Delhi","New York"]` and stores each city in a new array `cityList`.
  */
 
+let cities = ["London", "Tokyo", "Bejing", "New Delhi", "New York"];
 
-// Complete these Questions---> Exam Break!!
+let cityList = [];
+
+for (let m = 0; m < cities.length; m++) {
+  const mycity = cities[m];
+  cityList.unshift(mycity);
+}
+console.log(cityList);
