@@ -161,4 +161,55 @@ teaCollection.forEach(function (tea) {
     Skip `"London"` and store the other cities in a new array named `visitedCities`.
 */
 
-// Todo continue from question 8.
+let myCities = ["Berlin" , "London" , "Paris" , "New York"]
+
+let traveledCities = [];
+
+myCities.forEach((city)=>{
+  if(city === "London"){
+    return;
+  }
+
+  traveledCities.push(city);
+})
+
+// console.log(traveledCities);
+
+/*
+9. Write a `for loop that iterates through the array [2, 5, 7, 9]`.
+    Skip the value `7` and multiply the rest by 2. Store the 
+    result in a new array named `doubledNumbers`.
+*/
+
+let numberArray = [2, 5, 7, 9];
+
+let doubledNumbers = [];
+
+for(let i = 0;i < numberArray.length; i++ ){
+  if(numberArray[i] === 7){
+    continue;
+  }
+
+  doubledNumbers.push(numberArray [i] * 2) ;
+}
+
+// console.log(doubledNumbers);
+
+/*
+10. Use `for-of` loop to iterate through the array `["chai" , "green tea" , "black tea" , "jasmine tea" , "herbal tea"]`
+    and stop when the length of the current tea name is greater than 10.
+    Store the teas iterated over in an array named `shortTeas`.
+*/
+
+let teas = ["chai" , "green tea" , "black tea" , "jasmine tea" , "herbal tea"];
+
+let shortTeas = [];
+
+for (const tea of teas){
+  if(tea.length > 10){
+    break;
+  }
+  shortTeas.push(tea);
+}
+
+// console.log(shortTeas);
