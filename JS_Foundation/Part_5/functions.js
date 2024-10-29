@@ -78,4 +78,5 @@ function createTeaMaker (){
 
 let teaMaker = createTeaMaker();
 
-console.log(teaMaker("Green tea"));
+// console.log(teaMaker("Green tea"));
+
